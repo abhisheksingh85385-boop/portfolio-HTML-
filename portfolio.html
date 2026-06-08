@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abhishek Singh | Portfolio</title>
+
+    <meta name="description" content="Portfolio of Abhishek Singh, B.Tech student, web developer, and problem solver.">
+    <meta name="keywords" content="Portfolio, Web Developer, Software Engineer, Abhishek Singh">
+    <meta name="author" content="Abhishek Singh">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Abhishek Singh Portfolio">
+    <meta property="og:description" content="Personal portfolio showcasing skills, projects, and contact information.">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            background: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header,
+        footer {
+            background: #f4f4f4;
+            padding: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        article {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        form {
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        :focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">
+        Skip to Main Content
+    </a>
+
+    <!-- Header -->
+    <header role="banner">
+        <h1>Abhishek Singh</h1>
+        <p>B.Tech Student | Web Developer | Problem Solver</p>
+
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Home Section -->
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Welcome</h2>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I am passionate about Web Development,
+                Software Engineering, and Problem Solving.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+
+            <article>
+                <p>
+                    I am a third-year B.Tech student at
+                    Ambalika Institute of Technology and Management.
+                    I enjoy building accessible websites,
+                    solving coding challenges, and learning new technologies.
+                </p>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+
+            <article>
+                <h3>Weather Dashboard</h3>
+                <p>
+                    Real-time weather application using APIs.
+                </p>
+            </article>
+
+            <article>
+                <h3>Temperature Monitoring System</h3>
+                <p>
+                    Displays live temperatures of various cities.
+                </p>
+            </article>
+
+            <article>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    Accessible and responsive portfolio built with HTML5.
+                </p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <form aria-label="Contact Form">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required>
+
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required>
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2026 Abhishek Singh. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
